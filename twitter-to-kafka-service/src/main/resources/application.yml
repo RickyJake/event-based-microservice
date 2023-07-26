@@ -29,8 +29,8 @@ kafka-config:
   replication-factor: 3
 
 kafka-producer-config:
-  key-serializer-class: org.apache.kafka.common.serialization.longSerializer
-  value-serializer-class: io.confluent.kafka.serializers.kafkaAvroSerializer
+  key-serializer-class: org.apache.kafka.common.serialization.LongSerializer
+  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
   compression-type: snappy
   acks: 1
   batch-size: 16384
