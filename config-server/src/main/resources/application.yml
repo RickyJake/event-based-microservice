@@ -1,0 +1,23 @@
+server:
+  port: 8888
+logging:
+  level:
+    ROOT: DEBUG
+    org.spring.framework.cloud.config: DEBUG
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RickyJake/event-based-microservice-configserver.git
+          username: RickyJake
+          password: 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
+          default-label: master
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
