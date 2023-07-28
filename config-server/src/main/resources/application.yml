@@ -12,8 +12,6 @@ spring:
       server:
         git:
           uri: https://github.com/RickyJake/event-based-microservice-configserver.git
-          username: RickyJake
-          password: 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
           default-label: master
           clone-on-start: true
     fail-fast: true
